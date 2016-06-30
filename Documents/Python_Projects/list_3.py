@@ -1,0 +1,20 @@
+sample = []
+sample.append('one')
+print(sample)
+sample.append('two') 
+print(sample)
+sample.append('three')
+print(sample)
+sample.append('four') 
+print(sample) 
+sample2 = []
+sample2.insert(0,'a')
+print(sample2)
+sample2.insert(2,'c')
+print(sample2)
+sample2.append('d')
+print(sample2)
+sample2.insert(1,'b')
+print(sample2)
+del sample2[0]
+print('this is sample2 with the delete command ' + str(sample2))
