@@ -1,0 +1,30 @@
+guest_list = ['rip', 'ospf','eigrp','isis','bgp']
+print(" the first protocol is " + str(guest_list[0]))
+print (" the second protocol is" + str(guest_list[1]))
+print(" the third protocol is " + str(guest_list[2]))
+print(" the third protocol is " + str(guest_list[3]))
+print ( " the fourth protocol is " + str(guest_list[4]))
+print(str(guest_list[0]) + " cant be used anymore" ) 
+cancelled = guest_list[0]
+guest_list.insert(0,"VXLAN")
+print(guest_list)
+print( str(cancelled) +  " has been replaced with " + str(guest_list[0]) )
+guest_list.insert(0,"stp") 
+guest_list.insert(3,"rstp") 
+guest_list.append('pvst')
+print(" this is the new guest list " + str(guest_list))
+guest_list.pop()
+guest_list.pop()
+guest_list.pop()
+guest_list.pop()
+guest_list.pop()
+print(guest_list)
+del_list = []
+del_list.append(guest_list.pop(0)) 
+del_list.append(guest_list.pop(0)) 
+del_list.append(guest_list.pop(0)) 
+del_list.append(guest_list.pop(0)) 
+print(str(del_list) + " is the first  item poped from the original list" ) 
+print(" this is the guest list after the pop" + str(guest_list))
+
+

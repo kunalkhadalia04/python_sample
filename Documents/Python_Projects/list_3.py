@@ -18,3 +18,11 @@ sample2.insert(1,'b')
 print(sample2)
 del sample2[0]
 print('this is sample2 with the delete command ' + str(sample2))
+sample2.insert(0,'a')
+print(sample2)
+#poped_sample2 = sample2.pop()
+#print(sample2)
+#print(poped_sample2)
+print(sample2.pop(0))
+print("this is sample2 after the pop" + str(sample2))
+
